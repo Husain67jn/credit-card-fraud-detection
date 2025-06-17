@@ -1,6 +1,29 @@
+# 🛑 Ignore dataset and other large files
 /data/
+*.csv
+
+# 🚫 Ignore MLflow tracking folder (very large)
 mlruns/
-*.joblib
+
+# 🚫 Ignore compiled Python files & caches
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🧪 Ignore virtual environment if any
+.env/
+venv/
+ENV/
+env/
+
+# 🧠 Ignore model files (optional)
+*.joblib
+*.pkl
+
+# 🔎 Jupyter artifacts (if any notebooks used)
 .ipynb_checkpoints/
-.env
+
+# ✍️ Logs or temp files (optional)
+*.log
+.DS_Store
